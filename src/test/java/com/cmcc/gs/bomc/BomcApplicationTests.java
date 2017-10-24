@@ -1,4 +1,4 @@
-package com.example.bomc;
+package com.cmcc.gs.bomc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

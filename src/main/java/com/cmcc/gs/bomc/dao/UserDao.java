@@ -1,4 +1,4 @@
-package com.example.bomc.dao;
+package com.cmcc.gs.bomc.dao;
 
 public interface UserDao {
 

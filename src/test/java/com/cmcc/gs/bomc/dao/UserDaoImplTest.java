@@ -1,13 +1,12 @@
+package com.cmcc.gs.bomc.dao;
 
-
-import com.example.bomc.dao.UserDao;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static org.junit.Assert.*;
-
+@RunWith(SpringJUnit4ClassRunner.class)
 public class UserDaoImplTest {
     @Autowired
     private UserDao userDao;
@@ -28,7 +27,7 @@ public class UserDaoImplTest {
 //        userDao.create("e", 5);
         System.out.println(userDao);
         // 查数据库，应该有5个用户
-        Assert.assertEquals(3, userDao.getAllUsers().intValue());
+        assertEquals(3, userDao.getAllUsers().intValue());
 
 //        // 删除两个用户
 //        userdao.deleteByName("a");
